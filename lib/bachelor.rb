@@ -427,6 +427,7 @@ def get_average_age_for_season(data, season)
       quant += 1 
     end
     average_age = (total / quant)
+    puts average_age
         binding.pry 
 end
 get_average_age_for_season(data, "season 16")

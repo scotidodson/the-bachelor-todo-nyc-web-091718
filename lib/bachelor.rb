@@ -420,7 +420,8 @@ def get_average_age_for_season(data, season)
         end 
       end 
     end
-    puts array_of_ages.average
+    puts array_of_ages.inject(array.inject(0) { |sum, x| sum += x } / array_of_ages.size.to_f
+	end
         binding.pry 
 end
 get_average_age_for_season(data, "season 16")

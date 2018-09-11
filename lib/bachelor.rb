@@ -420,7 +420,7 @@ def get_average_age_for_season(data, season)
         end 
       end 
     end
-    puts array_of_ages
+    puts array_of_ages.average
         binding.pry 
 end
 get_average_age_for_season(data, "season 16")

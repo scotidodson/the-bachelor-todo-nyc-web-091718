@@ -416,7 +416,6 @@ def get_average_age_for_season(data, season)
     if season_key.to_s == season
     array.each do |contestant_hash|
         array_of_ages << contestant_hash.values[1].to_f
-        
         end 
       end 
     end
@@ -427,6 +426,5 @@ def get_average_age_for_season(data, season)
       quant += 1 
     end
     return (total / quant).round
-    binding.pry
 end
-get_average_age_for_season(data, "season 16")
+

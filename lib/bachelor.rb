@@ -421,8 +421,10 @@ def get_average_age_for_season(data, season)
       end 
     end
     total = 0
+    quant = 0
     array_of_ages.each do |x|
       total += x 
+      quant += 1 
     end
     average_age = (total / array_of_ages.)
         binding.pry 
